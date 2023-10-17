@@ -13,20 +13,38 @@ if ($conn->connect_error) {
     die("Falha na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-if(isset($_POST['enviado'])){
+if (isset($_POST['enviado'])) {
 
+    // COLETA DE DADOS
     $nome = $_POST['nome'];
     $telefone = $_POST['telefone'];
     $tempo = $_POST['tempo'];
     $service = $_POST['service'];
-    
-    $sqlCadastro = "INSERT INTO conserto (nome, telefone, tempo, service)
-    VALUES ('$nome', '$telefone', '$tempo', '$service')";
+    $dataAtual = date("Y-m-d");
 
-    $resultCadastro = $conn->query($sqlCadastro);
+    // VERIFICAÇÃO QUANTIDADE DE AGENDAMENTOS DIÁRIOS
 
-    header("location: ./calendario.php");
-}else {
+    $sqlQuantidade = "SELECT COUNT(*) as total FROM conserto WHERE DATE(data) = '$dataAtual'";
+    $resultQuantidade = $conn->query($sqlQuantidade);
+
+    if ($resultQuantidade) {
+        $row = $resultQuantidade->fetch_assoc();
+        $quantidade = $row['total'];
+
+        if ($quantidade >= 5) {
+            echo "<script>Agendamentos máximos atingidos</script>";
+            header("location: ./calendario.php");
+            exit;
+        } else {
+            $sqlCadastro = "INSERT INTO conserto (nome, telefone, tempo, service, data) VALUES ('$nome', '$telefone', '$tempo', '$service', '$dataAtual')";
+            $resultCadastro = $conn->query($sqlCadastro);
+
+            header("location: ./calendario.php");
+            exit;
+        }
+    } else {
+        echo "Erro: " . $conn->error;
+    }
+} else {
     echo "Erro!";
 }
-?>
