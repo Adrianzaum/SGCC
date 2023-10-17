@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bodycolor {
+    background-color: #ffffff;
+}
+
+.container-logo {
+    background-color: #000000;
+    width: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    top: 0%;
+}
+
+.logo-imagem {
+    margin-left: 15px;
+    margin-top: -10px;
+}
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-texto {
+    margin-left: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.menu li {
+    display: inline-block;
+    margin: 25px 5px;
+}
+
+.menu li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+
+.menu li a:hover {
+    background-color: rgb(40, 33, 33);
+    text-decoration: underline;
+}
+
+/*botões de login e cadastro*/
+
+.Carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.slider {
+    width: 800px;
+    height: 450px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    bottom: 12%;
+}
+
+.manual-btn {
+    border: 1px solid #828282;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #808080;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+    bottom: 12%;
+}
+
+.navigation-auto div {
+    border: 1px solid #7b7b7b;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #818181;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #7c7c7c;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #838383;
+}
+
+/*rodape */
+footer {
+    background-color: #000000;
+    padding: 50px 0;
+}
+.container-footer {
+    max-width: 1500px;
+    padding: 1% 2%;
+    margin: 10px;
+    margin-left: 100px;
+}
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col ul {
+    list-style: none;
+}
+.footer-col ul li {
+    margin: 10px 0;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias {
+    margin-top: 30px;
+}
+.footer-col .medias-socias a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i {
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover {
+    color: #ffffff;
+    background-color: white;
+}
+.footer-col .form-sub input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #8f8f8f;
+}
+.footer-col .form-sub input::placeholder {
+    color: white;
+}
+.footer-col .form-sub button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #415aca;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+}
+/* Responsivo */
+@media (max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 600px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/*CSS da aba Agendamento*/
+.hero {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #6ac1c5, #bda5ff);
+}
+
+#calendar {
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

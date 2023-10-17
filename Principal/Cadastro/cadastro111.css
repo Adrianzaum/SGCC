@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('../../imagens/Login/imagem1.jpg') no-repeat center/cover;
+}
+
+.wrapper {
+    width: 400px;
+    height: 500px;
+    padding: 2rem 2rem;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.715);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 28px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 3rem;
+}
+
+form input {
+    width: 85%;
+    outline: none;
+    border: 1px solid white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background: #e4e4e4;
+}
+
+button {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 90%;
+    color: white;
+    cursor: pointer;
+    background: rgb(17, 107, 143);
+}
+
+button:hover {
+    background: rgba(17, 107, 143, 0.877);
+}
+
+input:focus {
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.terms {
+    margin-top: 0.2rem;
+    display: flex;
+    align-items: center; /* Centralizar verticalmente os elementos */
+}
+
+.terms input {
+    height: 1em;
+    width: 1em;
+    margin-right: 0.5rem; /* Adicionar um espaçamento entre o input e o label */
+    cursor: pointer;
+    margin-bottom: -3px;
+}
+
+.terms label {
+    font-size: 1rem; /* Ajustar o tamanho da fonte */
+    color: rgb(255, 255, 255);
+}
+
+.terms a {
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.member {
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    color: #ffffff;
+}
+
+.member a {
+    color: rgb(17, 107, 143);
+    text-decoration: none;
+}

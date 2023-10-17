@@ -1,0 +1,163 @@
+.titulo1 {
+    margin-left: 300px;
+    margin-bottom: 15px;
+    margin-top: 120px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text-container1 {
+    max-width: 500px; /* Largura máxima da caixa de texto (ajuste conforme necessário) */
+    margin: 0 auto; /* Centraliza a caixa de texto horizontalmente */
+    padding: 20px; /* Espaçamento interno para melhor legibilidade */
+    border-radius: 1px; /* Borda arredondada para um visual mais suave */
+    margin-right: 200px;
+    margin-top: -300px;
+}
+
+.titulo2 {
+    margin-left: 290px;
+    margin-bottom: 15px;
+    margin-top: 450px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text-container2 {
+    max-width: 500px; /* Largura máxima da caixa de texto (ajuste conforme necessário) */
+    margin: 0 auto; /* Centraliza a caixa de texto horizontalmente */
+    padding: 20px; /* Espaçamento interno para melhor legibilidade */
+    border-radius: 1px; /* Borda arredondada para um visual mais suave */
+    margin-left: 200px;
+    margin-top: -300px;
+}
+
+.titulo3 {
+    margin-left: 290px;
+    margin-bottom: 120px;
+    margin-top: 400px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text-container3 {
+    max-width: 500px; /* Largura máxima da caixa de texto (ajuste conforme necessário) */
+    margin: 0 auto; /* Centraliza a caixa de texto horizontalmente */
+    padding: 20px; /* Espaçamento interno para melhor legibilidade */
+    border-radius: 1px; /* Borda arredondada para um visual mais suave */
+    margin-right: 200px;
+    margin-top: -400px;
+}
+
+.titulo4 {
+    margin-left: 290px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 300px;
+}
+
+.text-container4 {
+    max-width: 500px; /* Largura máxima da caixa de texto (ajuste conforme necessário) */
+    margin: 0 auto; /* Centraliza a caixa de texto horizontalmente */
+    padding: 20px; /* Espaçamento interno para melhor legibilidade */
+    border-radius: 1px; /* Borda arredondada para um visual mais suave */
+}
+
+p {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* carrossel */
+
+.carousel-inner {
+    margin-left: 83px;
+}
+
+.carousel-item img {
+    max-height: 100%; /* Defina a altura máxima em vez da largura máxima */
+    width: auto; /* Mantenha a proporção de aspecto */
+    margin: 0 auto; /* Centralize as imagens horizontalmente */
+    margin-left: -20px; /* Ajuste a margem esquerda para mover as imagens para a direita */
+    margin-bottom: 200px;
+}
+
+#carouselExample {
+    margin-left: 170px;
+}
+
+/* Estilo para os botões de controle do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #ffffff; /* Cor de fundo dos botões */
+    border: none; /* Remova a borda */
+    font-size: 24px; /* Tamanho da fonte dos ícones de controle (ajuste conforme necessário) */
+    color: #fff; /* Cor do ícone */
+    position: absolute; /* Defina a posição como absoluta para alinhar os botões */
+    top: 50%; /* Alinhe verticalmente ao centro */
+    width: 40px; /* Largura dos botões (ajuste conforme necessário) */
+    height: 450px; /* Altura dos botões (ajuste conforme necessário) */
+    text-align: center; /* Centralize o conteúdo do botão */
+    cursor: pointer; /* Mude o cursor para indicar que é clicável */
+}
+
+/* Posicione as setas verticalmente */
+.carousel-control-prev {
+    top: 50%; /* Alinhe verticalmente ao centro (padrão) */
+    transform: translateX(200%); /* Ajuste vertical para o alinhamento */
+    left: 0; /* Alinhe à esquerda */
+}
+
+.carousel-control-next {
+    top: 50%; /* Alinhe verticalmente ao centro (padrão) */
+    transform: translateX(100%); /* Ajuste vertical para o alinhamento */
+    right: 0; /* Alinhe à direita */
+}
+
+/* fim do carrossel */
+
+.cssdaimagem1 img {
+    max-width: 500px; /* Reduza o tamanho da imagem */
+    margin-top: 45px;
+    margin-left: 200px;
+}
+
+.cssdaimagem2 img {
+    max-width: 500px; /* Reduza o tamanho da imagem */
+    margin-top: 45px;
+    margin-left: 900px;
+}
+
+.cssdaimagem3 img {
+    width: 400px; /* Reduza o tamanho da imagem */
+    margin-top: 10px;
+    margin-left: -700px;
+}
+
+/*area do rodapé*/
+
+.footer-col {
+    margin-left: 1000px;
+    margin-bottom: 200px;
+    margin-top: -130px;
+}
+
+.p1 {
+    color: white;
+    margin-left: 130px;
+    margin-top: -180px;
+}
+
+.p2 {
+    color: white;
+    margin-left: 350px;
+    margin-top: -55px;
+    margin-bottom: 100px;
+}
+
+.p3 {
+    color: white;
+    margin-left: 550px;
+    margin-top: 170px;
+}
