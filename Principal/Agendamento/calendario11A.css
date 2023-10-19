@@ -312,6 +312,7 @@ body {
     align-items: center;
     pointer-events: none;
 }
+
 .events .event .title .event-title {
     font-size: 1rem;
     font-weight: 400;
@@ -323,6 +324,10 @@ body {
 }
 .events .event:hover i {
     color: #fff;
+}
+
+.title.servico {
+    margin-top: 15px;
 }
 .events .event .event-time {
     font-size: 0.8rem;

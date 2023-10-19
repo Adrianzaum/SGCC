@@ -10,10 +10,6 @@ if (isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']) {
     exit();
 }
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

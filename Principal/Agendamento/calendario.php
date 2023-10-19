@@ -9,7 +9,7 @@ include_once("./arquivoConn.php");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="../Agendamento/calendario1A.css">
+    <link rel="stylesheet" href="../Agendamento/calendario11A.css">
     <link rel="stylesheet" href="../index2x.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -85,7 +85,7 @@ include_once("./arquivoConn.php");
             <div class="events"></div>
             <div class="add-event-wrapper">
                 <div class="add-event-header">
-                    <div class="title" id="service-title">Adicionar Evento</div>
+                    <div class="title servico" id="service-title">Volte para a página "Serviços" para adicionar um outro agendamento</div>
                     <i class="fas fa-times close"></i>
                 </div>
                 <form id="event-form" method="POST" action="conectcalendarioo.php">
@@ -101,9 +101,15 @@ include_once("./arquivoConn.php");
 
                                 <?php
 
-                                $dataAtual = date("Y-m-d");
+                               $dataAtual = date("Y-m-d");
+                                ?>
+                                <script>
+                                    var dataAtual = '<?= $dataAtual ?>';
+                                </script>
+                                <?php
                                 $sqlBuscaAgendamentos = "SELECT * FROM conserto WHERE data='$dataAtual'";
                                 $resultBusca = $conn->query($sqlBuscaAgendamentos);
+
 
                                 while ($rowBusca = mysqli_fetch_assoc($resultBusca)) {
                                     $horariosAgendados = $rowBusca["tempo"];
@@ -130,7 +136,8 @@ include_once("./arquivoConn.php");
         </button>
     </div>
 
-    <script src="calendarioLogica.js"></script>
+    <script src="calendarioLogicaa1.js"></script>
+    <script src="atualizarHorarios.js"></script>
 </body>
 
 </html>
