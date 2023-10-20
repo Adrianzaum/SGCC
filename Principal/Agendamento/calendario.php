@@ -96,32 +96,11 @@ include_once("./arquivoConn.php");
                         <div class="add-event-input">
                             <select id="event-time" name="tempo" class="event-time" require>
                                 <option value="" disabled selected>Horário:</option>
-
-                                <!----VERIFICAÇÃO DE HORÁRIOS DISPONÍVEIS--->
-
-                                <?php
-
-                               $dataAtual = date("Y-m-d");
-                                ?>
-                                <script>
-                                    var dataAtual = '<?= $dataAtual ?>';
-                                </script>
-                                <?php
-                                $sqlBuscaAgendamentos = "SELECT * FROM conserto WHERE data='$dataAtual'";
-                                $resultBusca = $conn->query($sqlBuscaAgendamentos);
-
-
-                                while ($rowBusca = mysqli_fetch_assoc($resultBusca)) {
-                                    $horariosAgendados = $rowBusca["tempo"];
-                                }
-
-                                ?>
-
-                                <option id="time-1330" value="13:30" <?= ($horariosAgendados == '13:30') ? 'disabled' : '' ?>>13:30</option>
-                                <option id="time-1430" value="14:30" <?= ($horariosAgendados == '14:30') ? 'disabled' : '' ?>>14:30</option>
-                                <option id="time-1530" value="15:30" <?= ($horariosAgendados == '15:30') ? 'disabled' : '' ?>>15:30</option>
-                                <option id="time-1630" value="16:30" <?= ($horariosAgendados == '16:30') ? 'disabled' : '' ?>>16:30</option>
-                                <option id="time-1730" value="17:30" <?= ($horariosAgendados == '17:30') ? 'disabled' : '' ?>>17:30</option>
+                                <option id="time-1330" value="13:30">13:30</option>
+                                <option id="time-1430" value="14:30">14:30</option>
+                                <option id="time-1530" value="15:30">15:30</option>
+                                <option id="time-1630" value="16:30">16:30</option>
+                                <option id="time-1730" value="17:30">17:30</option>
                             </select>
                         </div>
                     </div>

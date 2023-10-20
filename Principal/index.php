@@ -155,11 +155,11 @@ if (isset($_SESSION['email'])) {
                 <div class="footer-col">
                     <h4>Obter ajuda</h4>
                     <ul>
-                        <li><a href="#">Perguntas Frequentes</a></li>
-                        <li><a href="#">Transporte</a></li>
-                        <li><a href="#">devoluções</a></li>
-                        <li><a href="#">Status De Pedido</a></li>
-                        <li><a href="#">Opções De Pagamento</a></li>
+                        <li><a href="PerguntasFrequentes.html">Perguntas Frequentes</a></li>
+                        <li><a href="Transportes.html">Transporte</a></li>
+                        <li><a href="Devolucoes.html">devoluções</a></li>
+                        <li><a href="statusdopedido.html">Status De Pedido</a></li>
+                        <li><a href="opcaodepagamento.html">Opções De Pagamento</a></li>
                     </ul>
                 </div>
                 <!--end footer col-->
