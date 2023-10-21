@@ -100,6 +100,7 @@ verificaCon($conn);
                         <div class="add-event-input">
                             <select id="event-time" name="tempo" class="event-time" require>
                                 <option value="" disabled selected>Horário:</option>
+<<<<<<< HEAD
 
                                 <!----VERIFICAÇÃO DE HORÁRIOS DISPONÍVEIS--->
 
@@ -126,6 +127,13 @@ verificaCon($conn);
                                 <option id="time-1530" value="15:30" <?= ($horariosAgendados == '15:30') ? 'disabled' : '' ?>>15:30</option>
                                 <option id="time-1630" value="16:30" <?= ($horariosAgendados == '16:30') ? 'disabled' : '' ?>>16:30</option>
                                 <option id="time-1730" value="17:30" <?= ($horariosAgendados == '17:30') ? 'disabled' : '' ?>>17:30</option>
+=======
+                                <option id="time-1330" value="13:30">13:30</option>
+                                <option id="time-1430" value="14:30">14:30</option>
+                                <option id="time-1530" value="15:30">15:30</option>
+                                <option id="time-1630" value="16:30">16:30</option>
+                                <option id="time-1730" value="17:30">17:30</option>
+>>>>>>> 430bc413b38dd67cd2874ffc1ee5fe2856fd72a0
                             </select>
                         </div>
                     </div>
