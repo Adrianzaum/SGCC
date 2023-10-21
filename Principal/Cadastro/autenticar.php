@@ -3,7 +3,7 @@ session_start();
 
 include("../Cadastro/conexaobd.php"); // Inclua o arquivo de conexão com o banco de dados
 
-if(isset($_POST['enviar'])){
+if (isset($_POST['enviar'])) {
     $email = $_POST['email'];
     $password = $_POST['senha'];
 
@@ -16,6 +16,8 @@ if(isset($_POST['enviar'])){
     if (mysqli_num_rows($resultado) == 1) {
         // Autenticação bem-sucedida
         $_SESSION['email'] = $email;
+        $_SESSION['senha'] = $password;
+        $_SESSION['logado'] = true;
         header("Location: ../index.php"); // Redirecionar para a página de serviços após a autenticação
         exit();
     } else {
@@ -25,4 +27,3 @@ if(isset($_POST['enviar'])){
 
     mysqli_close($conexao);
 }
-?>

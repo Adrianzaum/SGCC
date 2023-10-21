@@ -393,42 +393,42 @@ addEventSubmit.addEventListener('click', () => {
         return;
     } else {
         // Resto do código para adicionar o evento
-    const eventTitle = addEventTitle.value; // NOME DO USUÁRIO
-    const eventPhoneValue = addEventPhone.value;
-    const selectedTimeOption = addEventTimeSelect.options[addEventTimeSelect.selectedIndex]; // ARMAZENA O TEMPO
-    const selectedTime = selectedTimeOption.value; // ARMAZENA O TEMPO DEFINITIVO
-    const eventServiceSelect = document.getElementById('service-title'); // Elemento que contém o serviço selecionado
-    const eventService = eventServiceSelect.textContent; // NOME DO SERVIÇO
+        const eventTitle = addEventTitle.value; // NOME DO USUÁRIO
+        const eventPhoneValue = addEventPhone.value;
+        const selectedTimeOption = addEventTimeSelect.options[addEventTimeSelect.selectedIndex]; // ARMAZENA O TEMPO
+        const selectedTime = selectedTimeOption.value; // ARMAZENA O TEMPO DEFINITIVO
+        const eventServiceSelect = document.getElementById('service-title'); // Elemento que contém o serviço selecionado
+        const eventService = eventServiceSelect.textContent; // NOME DO SERVIÇO
 
-    if (
-        eventTitle === '' ||
-        eventPhoneValue === '' ||
-        selectedTime === '' ||
-        eventService === ''
-    ) {
-        alert('Por favor, preencha todos os campos');
-        return;
-    } 
+        if (
+            eventTitle === '' ||
+            eventPhoneValue === '' ||
+            selectedTime === '' ||
+            eventService === ''
+        ) {
+            alert('Por favor, preencha todos os campos');
+            return;
+        }
 
-    const newEvent = {
-        title: eventTitle,
-        phone: eventPhoneValue,
-        time: selectedTime,
-        service: eventService,
-    };
+        const newEvent = {
+            title: eventTitle,
+            phone: eventPhoneValue,
+            time: selectedTime,
+            service: eventService,
+        };
 
-    eventDayObj.events.push(newEvent);
+        eventDayObj.events.push(newEvent);
 
-    updateEvents(activeDay);
-    saveEvents();
+        updateEvents(activeDay);
+        saveEvents();
 
-    const activeDayEl = document.querySelector('.day.active');
-    if (!activeDayEl.classList.contains('event')) {
-        activeDayEl.classList.add('event');
-    }
+        const activeDayEl = document.querySelector('.day.active');
+        if (!activeDayEl.classList.contains('event')) {
+            activeDayEl.classList.add('event');
+        }
 
-    // Armazenar um indicador de evento adicionado com sucesso no localStorage
-    localStorage.setItem('eventoAdicionado', 'true');
+        // Armazenar um indicador de evento adicionado com sucesso no localStorage
+        localStorage.setItem('eventoAdicionado', 'true');
     }
 });
 

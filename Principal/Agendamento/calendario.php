@@ -1,5 +1,9 @@
 <?php
 include_once("./arquivoConn.php");
+include_once("../verificaCon.php");
+
+verificaCon($conn);
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -101,7 +105,7 @@ include_once("./arquivoConn.php");
 
                                 <?php
 
-                               $dataAtual = date("Y-m-d");
+                                $dataAtual = date("Y-m-d");
                                 ?>
                                 <script>
                                     var dataAtual = '<?= $dataAtual ?>';
