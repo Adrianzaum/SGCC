@@ -16,7 +16,8 @@ function verificaCon($conn)
   $senha = $_SESSION['senha'] ?? false;
 
   if (!$loged) {
-    header("Location: /TCC/Principal/Cadastro/Login.php");
+    echo "<s>alert('Faça o login primeiro!')</script>";
+    header("Location: /TCC/Principal/Cadastro/Login.php?script=Faça o login primeiro!");
     exit();
   }
 
