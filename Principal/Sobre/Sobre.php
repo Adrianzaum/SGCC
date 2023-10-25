@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>TCC Adrian</title>
     <link rel="stylesheet" href="../index2x.css">
-    <link rel="stylesheet" href="Sobreee66!!.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Sobre70.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -37,7 +37,7 @@
 
     <h5 class="titulo1">Nossa Missão</h5>
     <div class="cssdaimagem1">
-        <img src="../../imagens/Sobre/sewing.jpg" alt="imagem" />
+        <img src="../../imagens/Sobre/kclogo.png" alt="imagem" />
     </div>
     <div class="text-container1">
         <p>Em Katia e Carol Costuras, nossa missão é ir além da simples costura. Estamos aqui para transformar suas peças de roupa em obras-primas que refletem seu estilo e personalidade. Nosso compromisso é fornecer serviços de costura da mais alta qualidade, combinando habilidade artesanal com criatividade.</p>
@@ -45,42 +45,39 @@
 
 <h5 class="titulo2">Nossa história</h5>
 <div class="cssdaimagem2">
-<img src="../../imagens/Sobre/sewing.jpg"  alt="imagem">
+<img src="../../imagens/Sobre/tiakatiaemae.jpg"  alt="imagem">
 </div>
   <div class="text-container2">
-    <p>Nossa história é um testemunho de amor à costura. Katia e Carol, duas irmãs apaixonadas, cresceram imersas na tradição da costura, trabalhando lado a lado com sua mãe talentosa. Juntas, elas enfrentaram desafios, celebraram sucessos e, finalmente, deram vida ao seu próprio atelier, "Katia e Carol Costuras". Cada ponto em nossa jornada é uma parte importante de quem somos hoje.</p>
+    <p>Nossa história é um testemunho de amor à costura. Katia e Carol, duas irmãs apaixonadas, cresceram imersas na tradição da costura. Juntas, elas enfrentaram desafios, celebraram sucessos e, finalmente, deram vida ao seu próprio atelier, "Katia e Carol Costuras". Cada ponto em nossa jornada é uma parte importante de quem somos hoje.</p>
   </div>
 
 <h5 class="titulo3">Nossos Serviços</h5>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../../imagens/Carrossel/roupa1.png" class="d-block w-100" alt="imagem1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../imagens/Carrossel/roupa2.png" class="d-block w-100" alt="imagem2">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../imagens/Carrossel/roupa3.png" class="d-block w-100" alt="imagem3">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../../imagens/Carrossel/roupa4.png" class="d-block w-100" alt="imagem4">
-                    </div>
+    <div class="carousel-container">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../imagens/Carrossel/roupa11.png" class="d-block w-100" alt="imagem1">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="carousel-item">
+                    <img src="../../imagens/Carrossel/roupa22.png" class="d-block w-100" alt="imagem2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../imagens/Carrossel/roupa33.png" class="d-block w-100" alt="imagem3">
+                </div>
+                <div class="carousel-item">
+                    <img src="../../imagens/Carrossel/roupa44.png" class="d-block w-100" alt="imagem4">
+                </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
-</div>
   <div class="text-container3">
     <p>Em nosso atelier, oferecemos uma ampla gama de serviços de costura para atender às suas necessidades de moda e estilo. Desde o ajuste perfeito de roupas e criação de peças sob medida até a costura criativa que dá vida às suas ideias únicas, estamos aqui para tornar sua visão realidade. Nossa paixão pela costura e nosso compromisso com a excelência garantem que cada projeto que assumimos seja tratado com cuidado e dedicação. Sinta-se à vontade para personalizar esses textos de acordo com suas preferências e necessidades específicas. Eles devem ajudar a transmitir a mensagem e o espírito da sua empresa de costura.</p>
   </div>
@@ -114,6 +111,19 @@
             <p>(48) 99958-8428</p>
         </div>
 
+        <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var myCarousel = new bootstrap.Carousel(document.querySelector('#carouselExample'), {
+            interval: 5000, // Intervalo em milissegundos (5 segundos no exemplo)
+            wrap: true, // Permite que o carrossel volte ao início depois da última imagem
+        });
+    });
+</script>
+
+
 </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </html>

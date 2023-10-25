@@ -46,7 +46,8 @@
     padding: 20px; /* Espaçamento interno para melhor legibilidade */
     border-radius: 1px; /* Borda arredondada para um visual mais suave */
     margin-right: 200px;
-    margin-top: -400px;
+    margin-top: -600px;
+    margin-bottom: 300px;
 }
 
 .titulo4 {
@@ -55,13 +56,6 @@
     font-weight: bold;
     font-size: 30px;
     margin-top: 300px;
-}
-
-.text-container4 {
-    max-width: 500px; /* Largura máxima da caixa de texto (ajuste conforme necessário) */
-    margin: 0 auto; /* Centraliza a caixa de texto horizontalmente */
-    padding: 20px; /* Espaçamento interno para melhor legibilidade */
-    border-radius: 1px; /* Borda arredondada para um visual mais suave */
 }
 
 p {
@@ -76,12 +70,13 @@ p {
 }
 
 .carousel-item img {
-    max-height: 100%; /* Defina a altura máxima em vez da largura máxima */
-    width: auto; /* Mantenha a proporção de aspecto */
-    margin: 0 auto; /* Centralize as imagens horizontalmente */
-    margin-left: -20px; /* Ajuste a margem esquerda para mover as imagens para a direita */
+    max-height: 100%;
+    width: auto;
+    margin: 0 auto;
+    margin-left: -20px;
     margin-bottom: 200px;
 }
+
 
 
 /* Estilo para os botões de controle do carrossel */
@@ -115,7 +110,7 @@ p {
 /* fim do carrossel */
 
 .cssdaimagem1 img {
-    max-width: 500px; /* Reduza o tamanho da imagem */
+    max-width: 600px; /* Reduza o tamanho da imagem */
     margin-top: 45px;
     margin-left: 200px;
 }
