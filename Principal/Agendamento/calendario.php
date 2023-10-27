@@ -1,5 +1,10 @@
 <?php
-include_once("./arquivoConn.php");
+// Informações de conexão com o banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "katiaecarolcostura_db";
+
 include_once("../verificaCon.php");
 
 verificaCon($conn);
