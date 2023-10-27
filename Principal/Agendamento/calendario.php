@@ -1,3 +1,15 @@
+<?php
+// Informações de conexão com o banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "katiaecarolcostura_db";
+
+include_once("../verificaCon.php");
+
+verificaCon($conn);
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -92,11 +104,11 @@
                         <div class="add-event-input">
                             <select id="event-time" name="tempo" class="event-time" require>
                                 <option value="" disabled selected>Horário:</option>
-                                <option id="time-1330" value="13:30" >13:30</option>
-                                <option id="time-1430" value="14:30" >14:30</option>
-                                <option id="time-1530" value="15:30" >15:30</option>
-                                <option id="time-1630" value="16:30" >16:30</option>
-                                <option id="time-1730" value="17:30" >17:30</option>
+                                <option id="time-1330" value="13:30">13:30</option>
+                                <option id="time-1430" value="14:30">14:30</option>
+                                <option id="time-1530" value="15:30">15:30</option>
+                                <option id="time-1630" value="16:30">16:30</option>
+                                <option id="time-1730" value="17:30">17:30</option>
                             </select>
                         </div>
                     </div>
