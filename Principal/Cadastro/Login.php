@@ -10,19 +10,7 @@ if (isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']) {
     exit();
 }
 ?>
-<script>
-    function checkForScriptParam() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const scriptParam = urlParams.get('script');
 
-        if (scriptParam) {
-            const decodedScript = decodeURIComponent(scriptParam);
-            alert(decodedScript);
-        }
-    }
-
-    checkForScriptParam();
-</script>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -105,6 +93,7 @@ if (isset($_SESSION['isLoggedIn']) && $_SESSION['isLoggedIn']) {
             });
         });
     </script>
+    
 </body>
 
 </html>

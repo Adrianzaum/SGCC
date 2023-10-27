@@ -134,14 +134,22 @@ next.addEventListener('click', nextMonth);
 // Inicialização do calendário
 initCalendar();
 
+
 // Event Listener para os dias do calendário
 function addListener() {
     const days = document.querySelectorAll('.day');
     days.forEach((day) => {
         day.addEventListener('click', (e) => {
             const clickedDay = Number(e.target.innerText);
-
+            
+            // Adicione esta verificação para sábados e domingos
             const clickedDate = new Date(year, month, clickedDay);
+            const clickedDayOfWeek = clickedDate.getDay();
+            if (clickedDayOfWeek === 0 || clickedDayOfWeek === 6) {
+                alert('Não é possível cadastrar serviço em fins de semana.');
+                return;
+            }
+            
             const currentDate = new Date();
 
             if (clickedDate < currentDate && !e.target.classList.contains('today')) {
@@ -149,22 +157,17 @@ function addListener() {
                 return;
             }
 
+            getActiveDay(clickedDay);
+            updateEvents(clickedDay);
+            activeDay = clickedDay;
 
-            getActiveDay(clickedDay); // Passa o valor do dia clicado
-            updateEvents(clickedDay); // Passa o valor do dia clicado
-            activeDay = clickedDay; // Define o dia ativo como o dia clicado
-
-            //Remove a classe ativa
             days.forEach((day) => {
                 day.classList.remove('active');
             });
 
-            // Se clicar na data anterior ou na próxima data, muda para esse mês
             if (e.target.classList.contains('prev-date')) {
                 prevMonth();
-                //Adiciona classe ativa ao dia clicado após mês ser alterado
                 setTimeout(() => {
-                    // Adiciona classe ativa onde não há data anterior ou próxima
                     const days = document.querySelectorAll('.day');
                     days.forEach((day) => {
                         if (
@@ -177,7 +180,6 @@ function addListener() {
                 }, 100);
             } else if (e.target.classList.contains('next-date')) {
                 nextMonth();
-                //Adiciona classe ativa ao dia clicado após mês ser alterado
                 setTimeout(() => {
                     const days = document.querySelectorAll('.day');
                     days.forEach((day) => {
@@ -195,6 +197,8 @@ function addListener() {
         });
     });
 }
+
+
 
 // Botão "Hoje"
 todayBtn.addEventListener('click', () => {
