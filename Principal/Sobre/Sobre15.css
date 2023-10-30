@@ -65,13 +65,17 @@ p {
 
 /* carrossel */
 
+.carousel-container{
+    margin-left: 200px;
+}
+
 .carousel-inner {
-    margin-left: 83px;
+    margin-left: 65px;
 }
 
 .carousel-item img {
-    max-height: 100%;
-    width: auto;
+    height: 500px;
+    max-width: auto;
     margin: 0 auto;
     margin-left: -20px;
     margin-bottom: 200px;
@@ -103,7 +107,7 @@ p {
 
 .carousel-control-next {
     top: 50%; /* Alinhe verticalmente ao centro (padrão) */
-    transform: translateX(100%); /* Ajuste vertical para o alinhamento */
+    transform: translateX(70%); /* Ajuste vertical para o alinhamento */
     right: 0; /* Alinhe à direita */
 }
 

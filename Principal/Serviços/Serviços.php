@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>TCC Adrian</title>
-    <link rel="stylesheet" href="../Serviços/servicos123.css">
+    <link rel="stylesheet" href="../Serviços/servicos65.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,7 +24,7 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a href="../Index.php"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16" style="margin-bottom: 5px">
+          <li><a href="../index.php"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16" style="margin-bottom: 5px">
   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
 </svg> Home</a></li> 
           <li><a href="../Serviços/Serviços.php" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOOoYy_MRbbEv-2AuGN7w_e1NCiQPcg3l2g&usqp=CAU" alt="handshake" class="icones" width="25px" height="20px" style="margin-bottom: 2px">
@@ -54,53 +54,72 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4">
-      <a href="../Agendamento/calendario.php?service=Conserto-de-Roupas" class="noblue1 transition tamanho1" data-service="Concerto-de-Roupas">
-          <div class="card">
-            <img class="card-img-top" src="/TCC/imagens/serviços/imagem1.jpg" alt="Card image cap" />
-            <div class="card-body">
-              <h4 class="card-title">Conserto de Roupas</h4>
-              <p class="card-text">
-                Consertar roupas danificadas pode prolongar a vida útil da peça. A escolha do tipo de reparo depende do dano e
-                do tecido. É necessário usar linha e agulha adequadas. Um remendo pode ser necessário em alguns casos.
-                Consertar roupas é uma forma de economizar dinheiro e ser sustentável.
-              </p>
-            </div>
-          </div>
-        </a>
+        <div class="table-container">
+          <table class="aligned-table">
+            <tr>
+              <td>
+                <a href="../Agendamento/calendario.php?service=Conserto-de-Roupas" class="noblue1 transition tamanho1" data-service="Concerto-de-Roupas">
+                  <div class="card">
+                    <img class="card-img-top" src="/TCC/imagens/serviços/imagem1.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h4 class="card-title">Conserto de Roupas</h4>
+                      <p class="card-text">
+                        Consertar roupas danificadas pode prolongar a vida útil da peça. A escolha do tipo de reparo depende do dano e do tecido. É necessário usar linha e agulha adequadas. Um remendo pode ser necessário em alguns casos. Consertar roupas é uma forma de economizar dinheiro e ser sustentável.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="col-md-4">
-        <a href="../Agendamento/calendario.php?service=Roupas-sob-medida" class="noblue2 transition" data-service="Roupas-sob-medida">
-          <div class="card">
-            <img class="card-img-top" src="/TCC/imagens/serviços/imagem2.png" alt="Card image cap" />
-            <div class="card-body">
-              <h4 class="card-title">Roupas sob medida</h4>
-              <p class="card-text">
-                Roupas sob medida são peças únicas feitas para se ajustarem perfeitamente ao corpo. O processo envolve várias etapas,
-                como a elaboração do molde, corte e costura. Embora mais caras que as roupas prontas, oferecem conforto e elegância
-                por serem personalizadas e exclusivas.
-              </p>
-            </div>
-          </div>
-        </a>
+        <div class="table-container">
+          <table class="aligned-table">
+            <tr>
+              <td>
+                <a href="../Agendamento/calendario.php?service=Roupas-sob-medida" class="noblue2 transition" data-service="Roupas-sob-medida">
+                  <div class="card">
+                    <img class="card-img-top" src="/TCC/imagens/serviços/imagem2.png" alt="Card image cap" />
+                    <div class="card-body">
+                      <h4 class="card-title">Roupas sob medida</h4>
+                      <p class="card-text">
+                        Roupas sob medida são peças únicas feitas para se ajustarem perfeitamente ao corpo. O processo envolve várias etapas, como a elaboração do molde, corte e costura. Embora mais caras que as roupas prontas, oferecem conforto e elegância por serem personalizadas e exclusivas.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div class="col-md-4">
-        <a href="../Agendamento/calendario.php?service=Costura-Criativa" class="noblue3 transition" data-service="Costura-Criativa">
-          <div class="card">
-            <img class="card-img-top" src="/TCC/imagens/serviços/imagem3.jpg" alt="Card image cap" />
-            <div class="card-body">
-              <h4 class="card-title">Costura Criativa</h4>
-              <p class="card-text">
-                Diferente da costura tradicional, a costura criativa permite experimentação com materiais e técnicas.
-                Projetos personalizados podem ser criados, como bolsas, almofadas, quilts artísticos e roupas personalizadas.
-                É uma atividade gratificante e que permite o desenvolvimento de habilidades avançadas de costura.
-              </p>
-            </div>
-          </div>
-        </a>
+        <div class="table-container">
+          <table class="aligned-table">
+            <tr>
+              <td>
+                <a href="../Agendamento/calendario.php?service=Costura-Criativa" class="noblue3 transition" data-service="Costura-Criativa">
+                  <div class="card">
+                    <img class="card-img-top" src="/TCC/imagens/serviços/imagem3.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                      <h4 class="card-title">Costura Criativa</h4>
+                      <p class="card-text">
+                        A costura criativa permite experimentação com materiais e técnicas. Projetos personalizados podem ser criados, como bolsas, almofadas e roupas personalizadas. É uma atividade gratificante e que permite o desenvolvimento de habilidades avançadas de costura.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 <!-- Footer -->
 <footer class="py-3 bg-dark text-white">
   <div class="container">
@@ -111,7 +130,7 @@
         </p>
       </div>
       <div class="col-md-6 text-md-right">
-        <p class="mb-0">Desenvolvido por <a href="#">Katia e Carol Costuras</a></p>
+        <p class="mb-0">Desenvolvido por <a href="#">Adrian Miguel D. P. Soares</a></p>
       </div>
     </div>
   </div>
@@ -124,3 +143,4 @@
 
 </body>
 </html>
+

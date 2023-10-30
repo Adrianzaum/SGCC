@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>TCC Adrian</title>
     <link rel="stylesheet" href="../index2x.css">
-    <link rel="stylesheet" href="Sobre70.css">
+    <link rel="stylesheet" href="Sobre15.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +20,7 @@
         </div>
         <div class="menu">
             <ul>
-                <li><a href="../Index.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16" style="margin-bottom: 5px">
+                <li><a href="../index.php"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16" style="margin-bottom: 5px">
                     <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
                 </svg> Home</a></li>
                 <li><a href="../Serviços/Serviços.php"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfOOoYy_MRbbEv-2AuGN7w_e1NCiQPcg3l2g&usqp=CAU" alt="handshake" class="icones" width="25px" height="20px" style="margin-bottom: 2px"> Serviços</a></li>

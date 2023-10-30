@@ -57,6 +57,20 @@ header {
     text-decoration: underline;
 }
 
+
+/* Adicione estas regras CSS no seu arquivo de estilo */
+.table-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.aligned-table th, .aligned-table td {
+    border: 1px solid #000; /* Adicione uma borda para as células da tabela */
+    padding: 0.1px; /* Adicione preenchimento para espaçamento interno das células */
+}
+
+
 /*botões de login e cadastro*/
 
 .Carrossel {
